@@ -27,7 +27,7 @@ CPPFLAGS += -Ilib/header
 
 # raylib liegt als statische Bibliothek in lib/ (libraylib.a); dazu die
 # noetigen Systembibliotheken fuer den Desktop-OpenGL-Build.
-LDLIBS := -Llib -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
+LDLIBS := -Llib -lraylib -lGL -lm -lpthread -ldl -lrt -lwayland-client -lwayland-cursor -lwayland-egl -lxkbcommon
 
 BUILD := build
 BIN   := bin
